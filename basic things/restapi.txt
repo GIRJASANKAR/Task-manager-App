@@ -1,0 +1,47 @@
+now we are going to create express based rest api 
+data storage
+sighning up for a new account
+mongoose is a really popular liberary
+data validation
+user login
+
+//benifits of mongoose
+
+// defining which feilds are important and which are opctional
+// types of data for ex.i want only boolean not string
+// user authentication if no.1 user added a task no34 can't acces to it or read it 
+
+// a model is  allows us to model something in the real world that we want to be able to store 
+in the database.
+
+//object document mapper
+
+so we create models for all the collection we want and then we use model to 
+describe the data.
+
+task manager api
+
+// two very important topics....
+ data validation and data sanitization
+
+validation--> we can enforce that the data confirms some rules.. for example age>=18
+
+sanitization-->allows us to alter the data before saving it
+
+
+//you will know in future how to parse errors so u know what went wrong...
+
+//mongoose does not have many validation but it is allow us to setup custom validation using our own function
+
+but for coomplex validation like email phone number etc we use liberary
+i.e, npm validator.
+
+
+setting up releationships between users and tasks
+
+// start building out the  http endpoint for task application
+
+ first structuring our http endpoint for task api
+
+ //resource creation... i.e, creating new users and creating new tasks
+ npm i nodemon --save-dev ==>dev dependency

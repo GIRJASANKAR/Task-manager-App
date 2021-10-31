@@ -1,0 +1,42 @@
+// authentication and data security
+now api is publically availabe
+
+authentication
+i.e,
+users need to sign up and log in
+setup a releationships between a user and the tasks they ceated.
+
+password security
+
+
+        ---------------1st video------------------------
+
+hashing algorithm by design cannot be reversible
+storing password -->plain text to hashed password using bcrypt
+npm install brycpt js --> only one type encryption
+
+bcrypt.hash(plaintextpasswords,8)
+bcrypt.compare(plaintextpasswords,hashedpasswords)
+
+-------------2nd video----------
+use plainpassword to hashpasswords in 2 main places 1->when user is creted and updated.
+customize in user model with moongoose. mooongoose support middlewares..
+ 
+ middleware is a way to customize the behavior of your moongoose model 
+ pre and post  hooks-> asyncronous function .
+ middleware is specified in schema level.
+ this refer to that model
+
+
+ //we could run just before or after a user is --validate save 
+ // now middleware run every times when a user is save or updated.
+
+ ----------3-----------------
+ concept of logging a user in
+ new endpoint for log in
+ they have to provide their credencials their email and password
+
+ 
+
+
+
